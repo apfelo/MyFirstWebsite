@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal Website</title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+  <div class="whole">
+    <div class="container">
+      <div id="logo">
+        <img src="img/x.png" width="180" height="180">
+      </div>
+      <nav>
+        <ul class="flex-nav">
+          <li><a href="#edu">Education</a></li>
+          <li><a href="#sae">Society/Activity Experience</a></li>
+          <li><a href="#ih">Interest/Hobby</a></li>
+          <li><a href="#ai">Aim</a></li>
+          <li><a href="#se">Self-expectation</a></li>
+          <li><a href="#li">Life</a></li>
+        </ul>
+      </nav>
+      <header>
+        <img src="img/banner.jpg">
+      </header>
+      <section>
+        <div class="edu" id="edu">
+          <h2>學歷背景</h2>
+          <p>Long Shin Elementary School<br></p>
+          <p>Shih Meng Junior High School<br></p>
+          <p>Chung Li Senior High School<br></p>
+          <p>Chun Yuan Christian University<br></p>
+        </div>
+        <div class="sae" id="sae">
+          <h2>社團活動經驗</h2>
+          <p>我是海鷗(到處飛)：吉他、登山、攝影社<br>
+            活動：2019暑期全英文領袖營<br></p>
+        </div>
+        <div class="ih" id="ih">
+          <h2>興趣</h2>
+          <p>攝影/英文/旅行/看影集/<img src="img/設計.png" width="160" height="55">設計/睡/聽音樂</p>
+        </div>
+        <div class="ai" id="ai">
+          <h2>目標</h2>
+          <p>1.雅思7.5以上<br>2.儲蓄+運動習慣<br>3.熟練AI跟PS<br>4.練習完CPE試題</p>
+        </div>
+        <div class="se" id="se">
+          <h2>大學四年的自我期許</h2>
+          <p>希望可以好好精進英文並且考好雅思(或托福)<br>
+            交到摯友、找到結合興趣和專長的事</p>
+        </div>
+        <div class="life" id="li">
+          <h2>生活紀錄</h2>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="img/001.JPG" style="width:100%">
+              <div class="text">Canada</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="img/002.jpg" style="width:100%">
+              <div class="text">LIICA</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="img/003.JPG" style="width:100%">
+              <div class="text">Friday and my hand</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img src="img/005.jpg" style="width:100%">
+              <div class="text">LIICA</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img src="img/006.jpg" style="width:100%">
+              <div class="text">Little me</div>
+            </div>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+          </script>
+        </div>
+      </section>
+    </div>
+  </div class="container">
+  <aside>
+    <img src="img/004.JPG" width="193" height="257" title="右下">
+    <h2>Personal Info</h2>
+    <p>0975202597<br></p>
+    <p>Longtan,Taoyuan,Taiwan<br></p>
+    <p>b67342@gmail.com<br></p>
+    <a href="https://www.facebook.com/xolivec"><img id="fb" src="img/fb.png"></a>
+  </aside>
+  </div>
+  </div>
+  <footer class="footer">Copyright&nbsp;©&nbsp;Olive Chi&nbsp;,2019</footer>
+</body>
+
+</html>
